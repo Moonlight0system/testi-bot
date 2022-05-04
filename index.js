@@ -1,6 +1,5 @@
 const Discord = require("discord.js")
-
-const TOKEN = "ODkxMzkzMjI5NTQ1NzAxNDU2.YU9sow.O7ILbLwY6nvyETjXnOFI78oUsBo"
+require("dotenv").config()
 
 const client = new Discord.Client({
     intents: [
@@ -30,5 +29,7 @@ client.on("messageCreate", (message) => {
         message.reply("Welcome back to watch Mojo!")
     }
 })
+
+
 
 client.login(TOKEN)
